@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src = "images/logo.png" class="logo">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Fresher</p>
+                <h1>Hi, I'm <span>Nisha</span><br>Patil from India</h1>
+            </div>
+
+        
+        </div>
+    </div>
+    <!----------About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Nisha Patil.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I want to gain experience and want to work in the field of Computer science and explore.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Designing</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Programming Languages</span><br>Basic Python, Basic C++, SQL</li>
+                            <li><span>Databases Knowledge</span><br>MySQL and Basic MongoDB</li>
+                        </ul>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Education</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>S.S.C.</h2>
+                    <p>School - S.I.C.E.S. High School</p>
+                    <p>Marks - 89.60%</p>
+                    <a href="">2016</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>H.S.C.</h2>
+                    <p>KET'S V.G. Vaze College</p>
+                    <p>Marks - 67.23%</p>
+                    <a href="">2018</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>B.Sc. Computer Science</h2>
+                    <p>Mulund College of Commerce</p>
+                    <p>CGPA - 9.03</p>
+                    <a href="">2018-2021</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>M.Sc. Computer Science</h2>
+                    <p>S.K. Somaiya</p>
+                    <p>CGPA of Sem2 8.47</p>
+                    <a href="">2021-2023 (Pursuing)</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Swiggy Clone</h2>
+                    <p>It is a static website created using HTML and CSS.</p>
+                    <a href="https://cerulean-alpaca-b219c4.netlify.app/">Learn More</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("header");
+    var tabcontents = document.getElementsByClassName("container");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
